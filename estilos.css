@@ -1,0 +1,63 @@
+body
+{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.menu1
+{
+    background-color: #FFB300; 
+    overflow: hidden; 
+}
+.menu1 ul 
+{
+    list-style-type: none; /* Quitar los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para alinear los elementos en fila */
+}
+.menu1 li
+{
+    flex: 1;
+}
+.menu1 p
+{
+    padding: 0px;
+    text-align: center;
+    display: block;
+}
+.menu1 a
+{
+    display: block;
+    padding: 16px;
+    text-align: center;
+    color: white; /* Color de texto blanco */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    background-color: #F4A261; /* Fondo del botón */
+}
+.menu1 a:hover {
+    background-color: #ddd; /* Cambio de color al pasar el mouse */
+    color: black; /* Cambiar color de texto al pasar el mouse */
+}
+
+.enc 
+{
+    display: flex;
+}
+.enc .logo
+{
+    padding: 50px;
+    width: 35%;
+    text-align: center;
+    overflow: hidden;
+    background-color: red;
+
+}
+.enc .pag
+{
+    padding: 50px;
+    width: 65%;
+    text-align: center;
+    overflow: hidden;
+    background-color: red;
+}

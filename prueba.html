@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Opciones</title>
+    <style>
+        /* Estilo básico para la barra de navegación */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333; /* Fondo oscuro para la barra */
+            overflow: hidden; /* Asegura que los elementos no se desborden */
+        }
+
+        nav ul {
+            list-style-type: none; /* Quitar los puntos de la lista */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Flexbox para alinear los elementos en fila */
+        }
+
+        nav ul li {
+            flex: 1; /* Los elementos ocupan el mismo espacio */
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 14px;
+            text-align: center;
+            color: white; /* Color de texto blanco */
+            text-decoration: none; /* Eliminar subrayado de los enlaces */
+            background-color: #333; /* Fondo del botón */
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd; /* Cambio de color al pasar el mouse */
+            color: black; /* Cambiar color de texto al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding: 20px;">
+        <h1>Bienvenido a mi página web</h1>
+        <p>Haz clic en los enlaces de la barra de navegación.</p>
+    </div>
+
+</body>
+</html>
