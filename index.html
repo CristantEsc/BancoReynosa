@@ -50,6 +50,67 @@
             <h3>Ubicación</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.9585998191965!2d-98.28084124622437!3d26.0676093843614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86650f28f504895b%3A0xebec37ca26b1477a!2sBachillerato%20Militar%20Reynosa!5e0!3m2!1ses-419!2smx!4v1732543334166!5m2!1ses-419!2smx" 
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>Más acerca de nosotros</h3>
+            <div class="carrusel">
+                <!-- Contenedor de imágenes -->
+                <div class="imagenes">
+                    <img src="las-personas-mas-ricas-del-mundo-hombre-con-bolsas-de-dinero.jpg" alt="Imagen 1">
+                    <img src="seguridad-bancaria-detucel-min.jpg" alt="Imagen 2">
+                    <img src="protected-money_1140x642_ai_fw_io.original.png" alt="Imagen 3">
+                </div>
+        
+                <!-- Botones de navegación -->
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        
+                <!-- Indicadores de posición -->
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        
+            <script>
+                let slideIndex = 0;
+        
+                // Mostrar las imágenes en la posición correcta
+                function showSlides() {
+                    let slides = document.querySelector('.imagenes');
+                    let dots = document.querySelectorAll('.dot');
+                    
+                    // Asegura que el índice esté dentro del rango de imágenes
+                    if (slideIndex >= 3) { slideIndex = 0 }
+                    if (slideIndex < 0) { slideIndex = 2 }
+                    
+                    // Mover el carrusel horizontalmente según el slideIndex
+                    slides.style.transform = `translateX(${-100 * slideIndex}%)`;
+                    
+                    // Cambiar el estado activo de los puntos
+                    dots.forEach(dot => dot.classList.remove("active"));
+                    dots[slideIndex].classList.add("active");
+                }
+        
+                // Función para mover el carrusel
+                function moveSlide(n) {
+                    slideIndex += n;
+                    showSlides();
+                }
+        
+                // Función para ir a una imagen específica
+                function currentSlide(n) {
+                    slideIndex = n - 1;
+                    showSlides();
+                }
+        
+                // Mostrar la primera imagen al cargar
+                showSlides();
+        
+                // Cambio automático de imagen cada 5 segundos
+                setInterval(function() {
+                    moveSlide(1);
+                }, 5000);
+            </script>
             <h3>Contáctanos</h3>
             <p> 
                 Dirección: Xicoténcatl 201, Obrera, 88689 Reynosa, Tamps.
