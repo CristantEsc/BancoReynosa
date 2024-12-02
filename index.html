@@ -54,9 +54,21 @@
             <div class="carrusel">
                 <!-- Contenedor de imágenes -->
                 <div class="imagenes">
-                    <img src="las-personas-mas-ricas-del-mundo-hombre-con-bolsas-de-dinero.jpg" alt="Imagen 1">
-                    <img src="seguridad-bancaria-detucel-min.jpg" alt="Imagen 2">
-                    <img src="protected-money_1140x642_ai_fw_io.original.png" alt="Imagen 3">
+                    <img src="15." alt="Imagen 1">
+                    <img src="" alt="Imagen 2">
+                    <img src="" alt="Imagen 3">
+                    <img src="" alt="Imagen 1">
+                    <img src="" alt="Imagen 2">
+                    <img src="" alt="Imagen 3">
+                    <img src="" alt="Imagen 1">
+                    <img src="" alt="Imagen 2">
+                    <img src="" alt="Imagen 3">
+                    <img src="" alt="Imagen 1">
+                    <img src="" alt="Imagen 2">
+                    <img src="" alt="Imagen 3">
+                    <img src="" alt="Imagen 1">
+                    <img src="" alt="Imagen 2">
+                    <img src="" alt="Imagen 3">
                 </div>
         
                 <!-- Botones de navegación -->
@@ -68,6 +80,18 @@
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <span class="dot" onclick="currentSlide(12)"></span>
+                    <span class="dot" onclick="currentSlide(13)"></span>
+                    <span class="dot" onclick="currentSlide(14)"></span>
+                    <span class="dot" onclick="currentSlide(15)"></span>
                 </div>
             </div>
         
@@ -80,8 +104,8 @@
                     let dots = document.querySelectorAll('.dot');
                     
                     // Asegura que el índice esté dentro del rango de imágenes
-                    if (slideIndex >= 3) { slideIndex = 0 }
-                    if (slideIndex < 0) { slideIndex = 2 }
+                    if (slideIndex >= 15) { slideIndex = 0 }
+                    if (slideIndex < 0) { slideIndex = 1 }
                     
                     // Mover el carrusel horizontalmente según el slideIndex
                     slides.style.transform = `translateX(${-100 * slideIndex}%)`;
@@ -109,7 +133,7 @@
                 // Cambio automático de imagen cada 5 segundos
                 setInterval(function() {
                     moveSlide(1);
-                }, 5000);
+                }, 10000);
             </script>
             <h3>Contáctanos</h3>
             <p> 
