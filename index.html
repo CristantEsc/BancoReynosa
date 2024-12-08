@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
     <head>
         <link href="estilos.css" rel="stylesheet">
@@ -27,6 +27,144 @@
             </div>
             <div class="logo">
                 <p>Hola</p>
+            </div>
+        </div>
+        <div class="cuerpo"></div>
+            <h3>Banco Reynosa: Cuidamos tu economía</h3>
+            <p>Banco Reynosa, el nuevo banco mexicano por excelencia, resguarda tu dinero de forma segura, práctica y cómoda. </p>
+            <img src="imagen1.jfif" width="300px" height="200px" title="Garantizamos su satisfacción">
+            <img src="deposito_cuenta_int.png" width="300px" height="200px" title="Depósitos ">
+            <img src="depositphotos_465908866-stock-photo-pretty-student-smiling-cheerfully-feeling.jpg" width="300px" height="200px" title="Profesionales al trabajar">
+            <img src="emprendedor o empresario ¿con cual te identificas_.png" width="300px" height="200px" title="Hombres y mujeres con traje">
+            <img src="imagen2.jfif" width="300px" height="200px" title="Efectivo">
+            <img src="imagen3.jfif" width="300px" height="200px" title="Permitimos el flujo de la economia resguardando monedas y dando feria">
+            <img src="images (1).jfif.jfif" width="300px" height="200px" title="No se que dice ahi">
+            <img src="images (2).jfif" width="300px" height="200px" title="Consejos millonarios">
+            <img src="images (3).jfif" width="300px" height="200px" title="Economía en aumento">
+            <img src="images.jfif" width="300px" height="200px" title="Accede a tu caja fuerte">
+            <img src="protected-money_1140x642_ai_fw_io.original.png" width="300px" height="200px" title="Seguridad bancaria">
+            <img src="seguridad-bancaria-detucel-min.jpg" width="300px" height="200px" title="Transacciones seguras">
+            <img src="este-es-el-ranking-de-las-personas-mas-ricas-de-2023-algun-nombre-te-sorprendera.webp" width="300px" height="200px" title="Transacciones seguras">
+            <img src="infografia-personas-ricas-mundo-portada.jpg" width="300px" height="200px" title="Transacciones seguras">
+            <img src="las-personas-mas-ricas-del-mundo-hombre-con-bolsas-de-dinero.jpg" width="300px" height="200px" title="Transacciones seguras">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.9585998191965!2d-98.28084124622437!3d26.0676093843614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86650f28f504895b%3A0xebec37ca26b1477a!2sBachillerato%20Militar%20Reynosa!5e0!3m2!1ses-419!2smx!4v1732543334166!5m2!1ses-419!2smx" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>Más acerca de nosotros</h3>
+            <div class="carrusel">
+                <div class="imagenes">
+                    <img src="16.png" alt="Imagen 1">
+                    <img src="17.webp" alt="Imagen 2">
+                    <img src="18.png" alt="Imagen 3">
+                    <img src="19.jpg" alt="Imagen 1">
+                    <img src="20.jpg" alt="Imagen 2">
+                    <img src="21.png" alt="Imagen 3">
+                    <img src="22.png" alt="Imagen 1">
+                    <img src="23.webp" alt="Imagen 2">
+                    <img src="24.jpg" alt="Imagen 3">
+                    <img src="25.png" alt="Imagen 1">
+                    <img src="26.png" alt="Imagen 2">
+                    <img src="27.jpg" alt="Imagen 3">
+                    <img src="28.jpg" alt="Imagen 1">
+                    <img src="29.jpg" alt="Imagen 2">
+                    <img src="30.png" alt="Imagen 3">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <span class="dot" onclick="currentSlide(12)"></span>
+                    <span class="dot" onclick="currentSlide(13)"></span>
+                    <span class="dot" onclick="currentSlide(14)"></span>
+                    <span class="dot" onclick="currentSlide(15)"></span>
+                </div>
+            </div>
+        
+            <script>
+                let slideIndex = 0;
+        
+                // Mostrar las imágenes en la posición correcta
+                function showSlides() {
+                    let slides = document.querySelector('.imagenes');
+                    let dots = document.querySelectorAll('.dot');
+                    
+                    // Asegura que el índice esté dentro del rango de imágenes
+                    if (slideIndex >= 15) { slideIndex = 0 }
+                    if (slideIndex < 0) { slideIndex = 1 }
+                    
+                    // Mover el carrusel horizontalmente según el slideIndex
+                    slides.style.transform = `translateX(${-100 * slideIndex}%)`;
+                    
+                    // Cambiar el estado activo de los puntos
+                    dots.forEach(dot => dot.classList.remove("active"));
+                    dots[slideIndex].classList.add("active");
+                }
+        
+                // Función para mover el carrusel
+                function moveSlide(n) {
+                    slideIndex += n;
+                    showSlides();
+                }
+        
+                // Función para ir a una imagen específica
+                function currentSlide(n) {
+                    slideIndex = n - 1;
+                    showSlides();
+                }
+        
+                // Mostrar la primera imagen al cargar
+                showSlides();
+        
+                // Cambio automático de imagen cada 5 segundos
+                setInterval(function() {
+                    moveSlide(1);
+                }, 10000);
+            </script>
+            <h3>Contáctanos</h3>
+            <p> 
+                Dirección: Xicoténcatl 201, Obrera, 88689 Reynosa, Tamps.
+                <br>Teléfono: 899 910 1112
+                <br>Facebook: <a href="https://www.facebook.com/profile.php?id=61570121481156&mibextid=ZbWKwL">Banco Java (Haga click en el enlace)</a>
+                <br>Correo: cristanteescuela@gmail.com<br>
+            </p>
+    </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="estilos.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="moneda.jpg" type="image/x-icon">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="menu1">
+            <ul>
+                <li><p>Banco Reynosa</p></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Acerca de</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="enc">
+            <div class="logo">
+                <img src="moneda.jpg" width="100px" height="100px">
+            </div>
+            <div class="pag">
+                <h1>Banco Java </h1>
+                <h2>Cuidamos tu economía</h2>
             </div>
         </div>
         <div class="cuerpo"></div>
@@ -135,12 +273,18 @@
                     moveSlide(1);
                 }, 10000);
             </script>
-            <h3>Contáctanos</h3>
-            <p> 
-                Dirección: Xicoténcatl 201, Obrera, 88689 Reynosa, Tamps.
-                <br>Teléfono: 899 910 1112
-                <br>Facebook: <a href="https://www.facebook.com/profile.php?id=61570121481156&mibextid=ZbWKwL">Banco Java (Haga click en el enlace)</a>
-                <br>Correo: cristanteescuela@gmail.com<br>
-            </p>
+            <div class ="pie">
+                 <h3>Contáctanos</h3>
+                <p> 
+                    Dirección: Xicoténcatl 201, Obrera, 88689 Reynosa, Tamps.
+                    <!--<p><strong>Teléfono:</strong> <a href="https://api.whatsapp.com/send?phone=528999126080" target="_blank">  +52 899 912 6080 </a></p>
+                    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61568508038784" target="_blank">Tony Bazar</a></p>
+                    <p><strong>Correo:</strong> <a href="mailto:didiergaacosta@gmail.com">didiergaacosta@gmail.com</a></p>-->
+                    <br><br>
+                    <a href="https://web.whatsapp.com/"><img src="18.png" alt="whatsapp" width="60" height="60"></a>
+                    <a href="https://web.whatsapp.com/"><img src="16.png" alt="facebook" width="60" height="60"></a>
+                    <a href="https://web.whatsapp.com/"><img src="17.webp" alt="E-Mail" width="60" height="60"></a>
+                </p>
+            </div>
     </body>
 </html>
