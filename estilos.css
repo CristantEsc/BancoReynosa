@@ -1,8 +1,15 @@
 body
 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-size: 100% 100%;*/
+    background-size: cover;
+    color: black;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
 }
 .menu1
 {
@@ -47,7 +54,7 @@ body
 .enc .logo
 {
     padding: 50px;
-    width: 35%;
+    width: 30%;
     text-align: center;
     overflow: hidden;
     background-color: red;
@@ -56,7 +63,7 @@ body
 .enc .pag
 {
     padding: 50px;
-    width: 65%;
+    width: 60%;
     text-align: center;
     overflow: hidden;
     background-color: red;
@@ -124,4 +131,11 @@ body
 
 .active {
     background-color: #717171;
+}
+.pie
+{   
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
